@@ -508,6 +508,8 @@ var Parser = function() {
 				}
 				resolve(postsMetadata);
 			});
+		});
+	}
 
 	this.createCNAMEFile = function(argument) {
 		return new Promise(function(resolve, reject) {
@@ -524,7 +526,7 @@ var Parser = function() {
 				});
 			}
 		});
-	};
+	}
 }
 
 module.exports = Parser;
